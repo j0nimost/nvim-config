@@ -25,10 +25,10 @@ call plug#begin()
 "
 "
 " " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
- Plug 'fatih/vim-go', { 'tag': '*' }
+" Plug 'fatih/vim-go', { 'tag': '*' }
 "
 " " Plugin options
- Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+" Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 "
 " " Plugin outside ~/.vim/plugged with post-update hook
  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -44,17 +44,22 @@ Plug 'morhetz/gruvbox'
 
 " "Intellisense
 Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-cmp'
+"Plug 'hrsh7th/nvim-cmp'
 
 
 " " LSP
 
-source ~/AppData/Local/nvim/.config/nvim/lsp-config.vim
+
+"source ~/AppData/Local/nvim/.config/nvim/init.lua
 "luafile ~/AppData/Local/nvim/.config/nvim/lua/nvim-cmp.lua
 
 call plug#end()
+
+lua require("j0ni")
 
 set termguicolors
 colorscheme gruvbox
 set nowrap
 set number lines
+" Map
+set nohlsearch
