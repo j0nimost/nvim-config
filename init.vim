@@ -61,5 +61,7 @@ set termguicolors
 colorscheme gruvbox
 set nowrap
 set number lines
-" Map
+set tabstop=4
+set shiftwidth=4
+set expandtab
 set nohlsearch
